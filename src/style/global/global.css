@@ -5,6 +5,13 @@
   gap: 40px;
   margin: 0 70px 0 80px;
 }
+.app .main .video-wrapper {
+  max-width: calc(100% - 367px - 40px);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 59px;
+}
 
 button {
   border: none;

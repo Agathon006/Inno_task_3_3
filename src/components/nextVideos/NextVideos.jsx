@@ -2,7 +2,7 @@ import "./nextVideos.css";
 
 const NextVideos = () => {
   return (
-    <div></div>
+    <aside className="next-videos"></aside>
   );
 };
 
