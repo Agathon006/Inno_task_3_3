@@ -26,6 +26,7 @@
   display: flex;
   align-items: center;
   gap: 11px;
+  cursor: pointer;
 }
 .app .next-videos .next-videos__head .next-videos__head-right .next-videos__head-span {
   font-family: "Mulish";

@@ -32,6 +32,9 @@
   color: #19202c;
   margin-bottom: 4px;
   cursor: pointer;
+  font-weight: bold;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media (max-width: 960px) {
   .app .video-description .video-description__left .video-description__text .video-description__text-title {
@@ -84,6 +87,8 @@
   line-height: 25px;
   color: #c2c2c2;
   cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media (max-width: 960px) {
   .app .video-description .video-description__left .video-description__text .video-description__text-show-more {

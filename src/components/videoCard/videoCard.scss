@@ -28,15 +28,17 @@
     }
 
     &__video-headline {
-      margin: 13px 0 11px;
+      margin: 15px 0 9px;
       font-family: "Mulish";
       font-weight: bold;
       font-size: 26px;
       line-height: 33px;
       color: #19202c;
       cursor: pointer;
+      width: fit-content;
 
       @media (max-width: 1400px) {
+        margin: 8px 0 4px;
         font-size: 16px;
         line-height: 20px;
       }
