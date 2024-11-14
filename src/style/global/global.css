@@ -1,5 +1,11 @@
 @import "../../assets/fonts/Mulish-Bold/font-mulish-bold.css";
 @import "../../assets/fonts/Mulish-Regular/font-mulish-regular.css";
+.app {
+  min-height: 100vh;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
 .app .main {
   display: flex;
   gap: 40px;
@@ -25,9 +31,13 @@
 @media (max-width: 960px) {
   .app .main {
     flex-direction: column;
-    align-items: center;
     gap: 0;
     margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .app .main {
+    align-items: center;
   }
 }
 

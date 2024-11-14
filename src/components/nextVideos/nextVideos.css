@@ -1,4 +1,5 @@
 .app .next-videos {
+  width: 367px;
   margin-bottom: 48px;
 }
 .app .next-videos .next-videos__head {
@@ -92,4 +93,19 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media (max-width: 1400px) {
+  .app .next-videos {
+    width: 288px;
+  }
+}
+@media (max-width: 960px) {
+  .app .next-videos {
+    margin: 0 16px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .app .next-videos {
+    margin: 0 0 20px 0;
+  }
 }/*# sourceMappingURL=nextVideos.css.map */

@@ -1,5 +1,6 @@
 .app {
   .next-videos {
+    width: 367px;
     margin-bottom: 48px;
 
     .next-videos__head {
@@ -87,10 +88,23 @@
         margin-bottom: 13px;
       }
     }
+
     .next-videos__body {
       display: flex;
       flex-direction: column;
       gap: 30px;
+    }
+
+    @media (max-width: 1400px) {
+      width: 288px;
+    }
+
+    @media (max-width: 960px) {
+      margin: 0 16px 20px;
+    }
+
+    @media (max-width: 480px) {
+      margin: 0 0 20px 0;
     }
   }
 }
