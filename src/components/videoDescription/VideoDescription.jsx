@@ -12,6 +12,9 @@ const VideoDescription = () => {
         />
         <div className="video-description__text">
           <h3 className="video-description__text-title">Food & Drink</h3>
+          <span className="video-description__text-sub-number">
+            245K subscribed
+          </span>
           <span className="video-description__text-date">
             Published on 14 Jun 2019
           </span>
@@ -29,6 +32,7 @@ const VideoDescription = () => {
       <button className="video-description__subscribe-btn">
         Subscribe 2.3m
       </button>
+      <span className="video-description__subscribe-span">Subscribe</span>
     </div>
   );
 };

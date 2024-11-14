@@ -15,6 +15,12 @@
   border-radius: 100%;
   cursor: pointer;
 }
+@media (max-width: 960px) {
+  .app .video-description .video-description__left .video-description__channel-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
 .app .video-description .video-description__left .video-description__text {
   display: flex;
   flex-direction: column;
@@ -27,12 +33,36 @@
   margin-bottom: 4px;
   cursor: pointer;
 }
+@media (max-width: 960px) {
+  .app .video-description .video-description__left .video-description__text .video-description__text-title {
+    margin-top: 6px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.app .video-description .video-description__left .video-description__text .video-description__text-sub-number {
+  font-family: "Mulish";
+  font-size: 12px;
+  line-height: 15px;
+  color: #c2c2c2;
+  display: none;
+}
+@media (max-width: 960px) {
+  .app .video-description .video-description__left .video-description__text .video-description__text-sub-number {
+    display: block;
+  }
+}
 .app .video-description .video-description__left .video-description__text .video-description__text-date {
   font-family: "Mulish";
   font-size: 13px;
   line-height: 16px;
   color: #c2c2c2;
   margin-bottom: 14px;
+}
+@media (max-width: 960px) {
+  .app .video-description .video-description__left .video-description__text .video-description__text-date {
+    display: none;
+  }
 }
 .app .video-description .video-description__left .video-description__text .video-description__text-content {
   font-family: "Mulish";
@@ -43,12 +73,28 @@
   opacity: 0.6;
   margin-bottom: 15px;
 }
+@media (max-width: 960px) {
+  .app .video-description .video-description__left .video-description__text .video-description__text-content {
+    display: none;
+  }
+}
 .app .video-description .video-description__left .video-description__text .video-description__text-show-more {
   font-family: "Mulish";
   font-size: 20px;
   line-height: 25px;
   color: #c2c2c2;
   cursor: pointer;
+}
+@media (max-width: 960px) {
+  .app .video-description .video-description__left .video-description__text .video-description__text-show-more {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  .app .video-description .video-description__left {
+    gap: 10px;
+    max-width: none;
+  }
 }
 .app .video-description .video-description__subscribe-btn {
   width: 154px;
@@ -65,9 +111,27 @@
   white-space: nowrap;
   margin-left: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .app .video-description .video-description__subscribe-btn {
-    font-size: 12px;
-    line-height: 15px;
+    display: none;
+  }
+}
+.app .video-description .video-description__subscribe-span {
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ff0000;
+  display: none;
+}
+@media (max-width: 960px) {
+  .app .video-description .video-description__subscribe-span {
+    display: block;
+  }
+}
+@media (max-width: 960px) {
+  .app .video-description {
+    margin: 20px 20px 20px 16px;
+    align-items: center;
   }
 }/*# sourceMappingURL=videoDescription.css.map */

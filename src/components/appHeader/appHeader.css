@@ -34,7 +34,7 @@
     margin-right: 14px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .app .header__left-wrapper .header__burger-btn {
     display: none;
   }
@@ -50,7 +50,7 @@
     margin-right: 30px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .app .header__left-wrapper .header__youtube-link {
     display: none;
   }
@@ -63,7 +63,7 @@
   background: url("../../assets/images/youtube-mob.png") no-repeat center;
   background-size: contain;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .app .header__left-wrapper .header__youtube-link-mob {
     display: block;
   }
@@ -76,7 +76,7 @@
   color: #19202c;
   font-weight: bold;
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .app .header__left-wrapper .header__youtube-link-span {
     display: block;
   }
@@ -91,7 +91,7 @@
     width: auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .app .header__left-wrapper .header__search-input-wrapper {
     display: none;
   }

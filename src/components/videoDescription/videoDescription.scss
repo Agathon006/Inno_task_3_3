@@ -15,6 +15,11 @@
         height: 80px;
         border-radius: 100%;
         cursor: pointer;
+
+        @media (max-width: 960px) {
+          width: 50px;
+          height: 50px;
+        }
       }
 
       .video-description__text {
@@ -28,6 +33,24 @@
           color: #19202c;
           margin-bottom: 4px;
           cursor: pointer;
+
+          @media (max-width: 960px) {
+            margin-top: 6px;
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+
+        .video-description__text-sub-number {
+          font-family: "Mulish";
+          font-size: 12px;
+          line-height: 15px;
+          color: #c2c2c2;
+          display: none;
+
+          @media (max-width: 960px) {
+            display: block;
+          }
         }
 
         .video-description__text-date {
@@ -36,6 +59,10 @@
           line-height: 16px;
           color: #c2c2c2;
           margin-bottom: 14px;
+
+          @media (max-width: 960px) {
+            display: none;
+          }
         }
 
         .video-description__text-content {
@@ -46,6 +73,10 @@
           mix-blend-mode: normal;
           opacity: 0.6;
           margin-bottom: 15px;
+
+          @media (max-width: 960px) {
+            display: none;
+          }
         }
 
         .video-description__text-show-more {
@@ -54,7 +85,16 @@
           line-height: 25px;
           color: #c2c2c2;
           cursor: pointer;
+
+          @media (max-width: 960px) {
+            display: none;
+          }
         }
+      }
+
+      @media (max-width: 960px) {
+        gap: 10px;
+        max-width: none;
       }
     }
 
@@ -73,10 +113,27 @@
       white-space: nowrap;
       margin-left: 10px;
 
-      @media (max-width: 768px) {
-        font-size: 12px;
-        line-height: 15px;
+      @media (max-width: 960px) {
+        display: none;
       }
+    }
+
+    .video-description__subscribe-span {
+      font-family: "Mulish";
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #ff0000;
+      display: none;
+
+      @media (max-width: 960px) {
+        display: block;
+      }
+    }
+
+    @media (max-width: 960px) {
+      margin: 20px 20px 20px 16px;
+      align-items: center;
     }
   }
 }

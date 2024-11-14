@@ -12,6 +12,22 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+
+      @media (max-width: 1400px) {
+        max-width: calc(100% - 288px - 40px);
+      }
+
+      @media (max-width: 960px) {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 960px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin: 0;
     }
   }
 }
@@ -66,10 +82,32 @@ button {
   width: 1px;
   height: 1px;
   background-color: #c2c2c2;
+
+  &-hidden {
+    display: none;
+  }
 }
 
 .video-separator {
   width: 100%;
   height: 1px;
   background-color: rgba(216, 216, 216, 0.5);
+
+  &-hidden {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(216, 216, 216, 0.5);
+    display: none;
+
+    @media (max-width: 960px) {
+      display: block;
+      width: 90%;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 960px) {
+    width: 90%;
+    align-self: center;
+  }
 }

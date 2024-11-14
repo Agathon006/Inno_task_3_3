@@ -12,6 +12,7 @@ const App = () => {
           <VideoFrame />
           <div className="video-separator"></div>
           <VideoDescription />
+          <div className="video-separator-hidden"></div>
         </div>
         <NextVideos />
       </main>

@@ -1,9 +1,11 @@
 import "./videoFrame.css";
 import videoPreview from "../../assets/images/dude-you-re-getting-a-telescope.png";
+import videoPreviewMob from "../../assets/images/dude-you-re-getting-a-telescope-mob.png";
 import likeIcon from "../../assets/icons/like.svg";
 import disLikeIcon from "../../assets/icons/dislike.svg";
 import shareIcon from "../../assets/icons/share.svg";
 import extraIcon from "../../assets/icons/extra.svg";
+import showMoreIcon from "../../assets/icons/show-more.svg";
 
 const videoFrame = () => {
   return (
@@ -13,7 +15,20 @@ const videoFrame = () => {
         alt="Dude You Re Getting A Telescope"
         className="video-frame__preview"
       />
-      <h2 className="video-frame__title">Dude You Re Getting A Telescope</h2>
+      <img
+        src={videoPreviewMob}
+        alt="Dude You Re Getting A Telescope"
+        className="video-frame__preview-mob"
+      />
+      <div className="video-frame__title-wrapper">
+        <h2 className="video-frame__title">Dude You Re Getting A Telescope</h2>
+        <button
+          style={{
+            backgroundImage: `url(${showMoreIcon})`,
+          }}
+          className="video-frame__button-more"
+        ></button>
+      </div>
       <div className="video-frame__subtitle">
         <div className="video-frame__subtitle-left">
           <span className="video-frame__views">123k views</span>

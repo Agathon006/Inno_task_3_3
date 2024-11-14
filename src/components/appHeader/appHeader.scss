@@ -31,7 +31,7 @@
           margin-right: 14px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
           display: none;
         }
       }
@@ -46,7 +46,7 @@
           margin-right: 30px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
           display: none;
         }
       }
@@ -59,7 +59,7 @@
         background: url("../../assets/images/youtube-mob.png") no-repeat center;
         background-size: contain;
 
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
           display: block;
         }
       }
@@ -71,7 +71,7 @@
         color: #19202c;
         font-weight: bold;
 
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
           display: block;
         }
       }
@@ -85,7 +85,7 @@
           width: auto;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 960px) {
           display: none;
         }
 
