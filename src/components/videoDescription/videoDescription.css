@@ -1,1 +1,73 @@
-/*# sourceMappingURL=videoDescription.css.map */
+.app .video-description {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 38px;
+  margin-bottom: 48px;
+}
+.app .video-description .video-description__left {
+  display: flex;
+  gap: 12px;
+  max-width: 912px;
+}
+.app .video-description .video-description__left .video-description__channel-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.app .video-description .video-description__left .video-description__text {
+  display: flex;
+  flex-direction: column;
+}
+.app .video-description .video-description__left .video-description__text .video-description__text-title {
+  font-family: "Mulish";
+  font-size: 26px;
+  line-height: 33px;
+  color: #19202c;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.app .video-description .video-description__left .video-description__text .video-description__text-date {
+  font-family: "Mulish";
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+  margin-bottom: 14px;
+}
+.app .video-description .video-description__left .video-description__text .video-description__text-content {
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+.app .video-description .video-description__left .video-description__text .video-description__text-show-more {
+  font-family: "Mulish";
+  font-size: 20px;
+  line-height: 25px;
+  color: #c2c2c2;
+  cursor: pointer;
+}
+.app .video-description .video-description__subscribe-btn {
+  width: 154px;
+  height: 40px;
+  font-family: "Mulish";
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #ff0000;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+@media (max-width: 768px) {
+  .app .video-description .video-description__subscribe-btn {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}/*# sourceMappingURL=videoDescription.css.map */

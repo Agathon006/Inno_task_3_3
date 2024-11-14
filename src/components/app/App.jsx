@@ -10,6 +10,7 @@ const App = () => {
       <main className="main">
         <div className="video-wrapper">
           <VideoFrame />
+          <div className="video-separator"></div>
           <VideoDescription />
         </div>
         <NextVideos />

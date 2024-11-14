@@ -5,49 +5,49 @@ import disLikeIcon from "../../assets/icons/dislike.svg";
 import shareIcon from "../../assets/icons/share.svg";
 import extraIcon from "../../assets/icons/extra.svg";
 
-const VideoFrame = () => {
+const videoFrame = () => {
   return (
-    <div className="videoFrame">
+    <div className="video-frame">
       <img
         src={videoPreview}
         alt="Dude You Re Getting A Telescope"
-        className="videoFrame__preview"
+        className="video-frame__preview"
       />
-      <h2 className="videoFrame__title">Dude You Re Getting A Telescope</h2>
-      <div className="videoFrame__subtitle">
-        <div className="videoFrame__subtitle-left">
-          <span className="videoFrame__views">123k views</span>
+      <h2 className="video-frame__title">Dude You Re Getting A Telescope</h2>
+      <div className="video-frame__subtitle">
+        <div className="video-frame__subtitle-left">
+          <span className="video-frame__views">123k views</span>
         </div>
-        <div className="videoFrame__subtitle-right">
-          <button className="videoFrame__button">
+        <div className="video-frame__subtitle-right">
+          <button className="video-frame__button">
             <img
               src={likeIcon}
               alt="like"
-              className="videoFrame__button-logo"
+              className="video-frame__button-logo"
             />
-            <span className="videoFrame__button-span">123k</span>
+            <span className="video-frame__button-span">123k</span>
           </button>
-          <button className="videoFrame__button">
+          <button className="video-frame__button">
             <img
               src={disLikeIcon}
               alt="dislike"
-              className="videoFrame__button-logo"
+              className="video-frame__button-logo"
             />
-            <span className="videoFrame__button-span">435k</span>
+            <span className="video-frame__button-span">435k</span>
           </button>
-          <button className="videoFrame__button">
+          <button className="video-frame__button">
             <img
               src={shareIcon}
               alt="share"
-              className="videoFrame__button-logo"
+              className="video-frame__button-logo"
             />
-            <span className="videoFrame__button-span">Share</span>
+            <span className="video-frame__button-span">Share</span>
           </button>
           <button
             style={{
               backgroundImage: `url(${extraIcon})`,
             }}
-            className="videoFrame__extra-button"
+            className="video-frame__extra-button"
           ></button>
         </div>
       </div>
@@ -55,4 +55,4 @@ const VideoFrame = () => {
   );
 };
 
-export default VideoFrame;
+export default videoFrame;

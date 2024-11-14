@@ -1,7 +1,11 @@
-.app .videoFrame .videoFrame__preview {
-  width: 100%;
+.app .video-frame {
+  margin-bottom: 15px;
 }
-.app .videoFrame .videoFrame__title {
+.app .video-frame .video-frame__preview {
+  width: 100%;
+  cursor: pointer;
+}
+.app .video-frame .video-frame__title {
   margin: 20px 0 4px 0;
   font-family: "Mulish";
   font-size: 36px;
@@ -9,38 +13,38 @@
   font-weight: bold;
   color: #192646;
 }
-.app .videoFrame .videoFrame__subtitle {
+.app .video-frame .video-frame__subtitle {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.app .videoFrame .videoFrame__subtitle-left .videoFrame__views {
+.app .video-frame .video-frame__subtitle-left .video-frame__views {
   font-family: "Mulish";
   font-size: 20px;
   line-height: 25px;
   color: #c2c2c2;
 }
-.app .videoFrame .videoFrame__subtitle-right .videoFrame__button {
+.app .video-frame .video-frame__subtitle-right .video-frame__button {
   padding: 10px 20px;
   background-color: rgba(240, 240, 240, 0.3);
   mix-blend-mode: normal;
   border-radius: 20px;
 }
-.app .videoFrame .videoFrame__subtitle-right .videoFrame__button:nth-child(2) {
+.app .video-frame .video-frame__subtitle-right .video-frame__button:nth-child(2) {
   margin: 0 10px;
 }
-.app .videoFrame .videoFrame__subtitle-right .videoFrame__button-logo {
+.app .video-frame .video-frame__subtitle-right .video-frame__button-logo {
   margin-right: 8px;
   width: 14px;
   height: 13px;
 }
-.app .videoFrame .videoFrame__subtitle-right .videoFrame__button-span {
+.app .video-frame .video-frame__subtitle-right .video-frame__button-span {
   font-family: "Mulish";
   font-size: 16px;
   line-height: 20px;
   color: #192646;
 }
-.app .videoFrame .videoFrame__subtitle-right .videoFrame__extra-button {
+.app .video-frame .video-frame__subtitle-right .video-frame__extra-button {
   margin-left: 40px;
   width: 28px;
   height: 6px;
