@@ -1,0 +1,65 @@
+.app {
+  .video-card {
+    width: 367px;
+    display: flex;
+    flex-direction: column;
+
+    // @media (max-width: 480px) {
+    //   width: 100%;
+    //   height: calc((100vw - 32px) / 1.454);
+    // }
+
+    &__img-wrapper {
+      position: relative;
+      width: 367px;
+      height: 213px;
+      cursor: pointer;
+
+      //   @media (max-width: 480px) {
+      // width: 100%;
+      // height: calc((100vw - 32px) / 1.92);
+      //   }
+
+      .video-card__img {
+        width: 367px;
+        height: 213px;
+        border-radius: 14px;
+
+        // @media (max-width: 480px) {
+        //   object-fit: cover;
+        //   width: 100%;
+        //   height: calc((100vw - 32px) / 1.92);
+        // }
+      }
+    }
+
+    &__video-headline {
+      margin: 13px 0 11px;
+      font-family: "Mulish";
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 33px;
+      color: #19202c;
+      cursor: pointer;
+    }
+
+    &__additional-info-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .video-card__text-views {
+        font-family: "Mulish";
+        font-size: 18px;
+        line-height: 23px;
+        color: #c2c2c2;
+      }
+
+      .video-card__text-author {
+        font-family: "Mulish";
+        font-size: 18px;
+        line-height: 23px;
+        color: #c2c2c2;
+      }
+    }
+  }
+}
