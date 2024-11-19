@@ -70,8 +70,8 @@ button {
 
 .time-label {
   font-family: "Mulish";
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   color: #ffffff;
   position: absolute;
   right: 10px;

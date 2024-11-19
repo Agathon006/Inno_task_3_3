@@ -30,8 +30,8 @@
     &__video-headline {
       margin: 15px 0 9px;
       @include h3;
-      font-size: 26px;
-      line-height: 33px;
+      font-size: 1.625rem;
+      line-height: 2.0625rem;
       color: $color-dark-blue;
       font-weight: bold;
       cursor: pointer;
@@ -39,8 +39,8 @@
 
       @media (max-width: 1400px) {
         margin: 8px 0 4px;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 1.25rem;
       }
     }
 
@@ -50,25 +50,25 @@
 
       .video-card__text-views {
         @include h3;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 1.125rem;
+        line-height: 1.4375rem;
         color: $color-gray;
 
         @media (max-width: 1400px) {
-          font-size: 13px;
-          line-height: 16px;
+          font-size: 0.8125rem;
+          line-height: 1rem;
         }
       }
 
       .video-card__text-author {
         @include h3;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 1.125rem;
+        line-height: 1.4375rem;
         color: $color-gray;
 
         @media (max-width: 1400px) {
-          font-size: 13px;
-          line-height: 16px;
+          font-size: 0.8125rem;
+          line-height: 1rem;
         }
       }
     }

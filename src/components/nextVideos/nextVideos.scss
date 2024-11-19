@@ -16,8 +16,8 @@
         margin-bottom: 1px;
 
         @media (max-width: 1400px) {
-          font-size: 20px;
-          line-height: 25px;
+          font-size: 1.25rem;
+          line-height: 1.5625rem;
           margin-bottom: 0px;
         }
       }
@@ -36,8 +36,8 @@
           text-transform: uppercase;
 
           @media (max-width: 1400px) {
-            font-size: 10px;
-            line-height: 13px;
+            font-size: 0.625rem;
+            line-height: 0.8125rem;
             letter-spacing: 0.625px;
           }
         }
