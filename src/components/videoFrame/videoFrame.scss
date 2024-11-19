@@ -30,7 +30,7 @@
         font-size: 36px;
         line-height: 45px;
         font-weight: bold;
-        color: #192646;
+        color: $color-blue;
 
         @media (max-width: 960px) {
           width: 210px;
@@ -65,7 +65,7 @@
           font-family: "Mulish";
           font-size: 20px;
           line-height: 25px;
-          color: #c2c2c2;
+          color: $color-gray;
 
           @media (max-width: 960px) {
             font-size: 12px;
@@ -95,7 +95,7 @@
             font-family: "Mulish";
             font-size: 16px;
             line-height: 20px;
-            color: #192646;
+            color: $color-blue;
 
             @media (max-width: 960px) {
               font-size: 12px;

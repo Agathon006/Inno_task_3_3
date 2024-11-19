@@ -14,7 +14,7 @@
         font-weight: bold;
         font-size: 36px;
         line-height: 45px;
-        color: #19202c;
+        color: $color-dark-blue;
         margin-bottom: 1px;
 
         @media (max-width: 1400px) {
@@ -37,7 +37,7 @@
           line-height: 20px;
           letter-spacing: 1px;
           text-transform: uppercase;
-          color: #19202c;
+          color: $color-dark-blue;
 
           @media (max-width: 1400px) {
             font-size: 10px;

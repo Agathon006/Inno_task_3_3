@@ -30,7 +30,7 @@
           font-family: "Mulish";
           font-size: 26px;
           line-height: 33px;
-          color: #19202c;
+          color: $color-dark-blue;
           margin-bottom: 4px;
           cursor: pointer;
           font-weight: bold;
@@ -47,7 +47,7 @@
           font-family: "Mulish";
           font-size: 12px;
           line-height: 15px;
-          color: #c2c2c2;
+          color: $color-gray;
           display: none;
 
           @media (max-width: 960px) {
@@ -59,7 +59,7 @@
           font-family: "Mulish";
           font-size: 13px;
           line-height: 16px;
-          color: #c2c2c2;
+          color: $color-gray;
           margin-bottom: 14px;
 
           @media (max-width: 960px) {
@@ -71,7 +71,7 @@
           font-family: "Mulish";
           font-size: 16px;
           line-height: 22px;
-          color: #000000;
+          color: $color-black;
           mix-blend-mode: normal;
           opacity: 0.6;
           margin-bottom: 15px;
@@ -85,7 +85,7 @@
           font-family: "Mulish";
           font-size: 20px;
           line-height: 25px;
-          color: #c2c2c2;
+          color: $color-gray;
           cursor: pointer;
           width: fit-content;
 
@@ -107,10 +107,10 @@
       font-family: "Mulish";
       font-size: 16px;
       line-height: 20px;
-      color: #ffffff;
+      color: $color-white;
       padding: 10px 20px;
       border-radius: 20px;
-      background-color: #ff0000;
+      background-color: $color-red;
       border: none;
       cursor: pointer;
       white-space: nowrap;
@@ -126,7 +126,7 @@
       font-size: 16px;
       line-height: 20px;
       text-align: center;
-      color: #ff0000;
+      color: $color-red;
       display: none;
 
       @media (max-width: 960px) {
