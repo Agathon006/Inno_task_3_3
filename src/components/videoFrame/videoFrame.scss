@@ -27,7 +27,7 @@
 
       .video-frame__title {
         @include h1;
-        color: $primary;
+        color: var(--primary);
         font-weight: bold;
 
         @media (max-width: 960px) {
@@ -61,7 +61,7 @@
       &-left {
         .video-frame__views {
           @include h2;
-          color: $secondary;
+          color: var(--secondary);
 
           @media (max-width: 960px) {
             font-size: 0.75rem;
@@ -89,7 +89,7 @@
           }
           &-span {
             @include h3;
-            color: $primary;
+            color: var(--primary);
 
             @media (max-width: 960px) {
               font-size: 0.75rem;

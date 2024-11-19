@@ -32,7 +32,7 @@
       @include h3;
       font-size: 1.625rem;
       line-height: 2.0625rem;
-      color: $primary-dark;
+      color: var(--primary-dark);
       font-weight: bold;
       cursor: pointer;
       width: fit-content;
@@ -52,7 +52,7 @@
         @include h3;
         font-size: 1.125rem;
         line-height: 1.4375rem;
-        color: $secondary;
+        color: var(--secondary);
 
         @media (max-width: 1400px) {
           font-size: 0.8125rem;
@@ -64,7 +64,7 @@
         @include h3;
         font-size: 1.125rem;
         line-height: 1.4375rem;
-        color: $secondary;
+        color: var(--secondary);
 
         @media (max-width: 1400px) {
           font-size: 0.8125rem;

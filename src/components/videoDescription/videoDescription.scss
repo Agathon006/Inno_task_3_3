@@ -30,7 +30,7 @@
           @include h3;
           font-size: 1.625rem;
           line-height: 2.0625rem;
-          color: $primary-dark;
+          color: var(--primary-dark);
           margin-bottom: 4px;
           cursor: pointer;
           font-weight: bold;
@@ -47,7 +47,7 @@
           @include h3;
           font-size: 0.75rem;
           line-height: 0.9375rem;
-          color: $secondary;
+          color: var(--secondary);
           display: none;
 
           @media (max-width: 960px) {
@@ -59,7 +59,7 @@
           @include h3;
           font-size: 0.8125rem;
           line-height: 1rem;
-          color: $secondary;
+          color: var(--secondary);
           margin-bottom: 14px;
 
           @media (max-width: 960px) {
@@ -71,7 +71,7 @@
           @include h3;
           font-size: 1rem;
           line-height: 1.375rem;
-          color: $black;
+          color: var(--black);
           mix-blend-mode: normal;
           opacity: 0.6;
           margin-bottom: 15px;
@@ -83,7 +83,7 @@
 
         .video-description__text-show-more {
           @include h2;
-          color: $secondary;
+          color: var(--secondary);
           cursor: pointer;
           width: fit-content;
 
@@ -103,10 +103,10 @@
       width: 154px;
       height: 40px;
       @include h3;
-      color: $white;
+      color: var(--white);
       padding: 10px 20px;
       border-radius: 20px;
-      background-color: $red;
+      background-color: var(--red);
       border: none;
       cursor: pointer;
       white-space: nowrap;
@@ -119,7 +119,7 @@
 
     .video-description__subscribe-span {
       @include h3;
-      color: $red;
+      color: var(--red);
       text-align: center;
       display: none;
 
