@@ -1,4 +1,5 @@
-@use '../../style/mixins/mixins' as *;
+@use '../../style/vars' as *;
+@use '../../style/mixins' as *;
 
 .app {
   .header {

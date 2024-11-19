@@ -1,2 +1,4 @@
-@use './mixins/mixins' as *;
-@use './global/global' as *;
+@use './reset' as *;
+@use './vars' as *;
+@use './mixins' as *;
+@use './global' as *;

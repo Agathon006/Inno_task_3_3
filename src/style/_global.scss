@@ -1,4 +1,5 @@
-@use '../mixins/mixins' as *;
+@use "./vars" as *;
+@use "./mixins" as *;
 
 .app {
   min-height: 100vh;
