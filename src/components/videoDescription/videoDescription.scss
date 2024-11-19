@@ -27,7 +27,10 @@
         flex-direction: column;
 
         .video-description__text-title {
-          @include default-text('Mulish', 26px, 33px, $color-dark-blue);
+          @include h3;
+          font-size: 26px;
+          line-height: 33px;
+          color: $color-dark-blue;
           margin-bottom: 4px;
           cursor: pointer;
           font-weight: bold;
@@ -41,7 +44,10 @@
         }
 
         .video-description__text-sub-number {
-          @include default-text('Mulish', 12px, 15px, $color-gray);
+          @include h3;
+          font-size: 12px;
+          line-height: 15px;
+          color: $color-gray;
           display: none;
 
           @media (max-width: 960px) {
@@ -50,7 +56,10 @@
         }
 
         .video-description__text-date {
-          @include default-text('Mulish', 13px, 16px, $color-gray);
+          @include h3;
+          font-size: 13px;
+          line-height: 16px;
+          color: $color-gray;
           margin-bottom: 14px;
 
           @media (max-width: 960px) {
@@ -59,7 +68,10 @@
         }
 
         .video-description__text-content {
-          @include default-text('Mulish', 16px, 22px, $color-black);
+          @include h3;
+          font-size: 16px;
+          line-height: 22px;
+          color: $color-black;
           mix-blend-mode: normal;
           opacity: 0.6;
           margin-bottom: 15px;
@@ -70,7 +82,8 @@
         }
 
         .video-description__text-show-more {
-          @include default-text('Mulish', 20px, 25px, $color-gray);
+          @include h2;
+          color: $color-gray;
           cursor: pointer;
           width: fit-content;
 
@@ -89,7 +102,8 @@
     .video-description__subscribe-btn {
       width: 154px;
       height: 40px;
-      @include default-text('Mulish', 16px, 20px, $color-white);
+      @include h3;
+      color: $color-white;
       padding: 10px 20px;
       border-radius: 20px;
       background-color: $color-red;
@@ -104,7 +118,8 @@
     }
 
     .video-description__subscribe-span {
-      @include default-text('Mulish', 16px, 20px, $color-red);
+      @include h3;
+      color: $color-red;
       text-align: center;
       display: none;
 

@@ -26,7 +26,8 @@
       justify-content: space-between;
 
       .video-frame__title {
-        @include default-text('Mulish', 36px, 45px, $color-blue);
+        @include h1;
+        color: $color-blue;
         font-weight: bold;
 
         @media (max-width: 960px) {
@@ -59,7 +60,8 @@
 
       &-left {
         .video-frame__views {
-          @include default-text('Mulish', 20px, 25px, $color-gray);
+          @include h2;
+          color: $color-gray;
 
           @media (max-width: 960px) {
             font-size: 12px;
@@ -86,7 +88,8 @@
             height: 13px;
           }
           &-span {
-            @include default-text('Mulish', 16px, 20px, $color-blue);
+            @include h3;
+            color: $color-blue;
 
             @media (max-width: 960px) {
               font-size: 12px;

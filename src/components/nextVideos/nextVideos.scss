@@ -10,7 +10,8 @@
       margin-bottom: 26px;
 
       .next-videos__head-title {
-        @include default-text('Mulish', 36px, 45px, $color-dark-blue);
+        @include h1;
+        color: $color-dark-blue;
         font-weight: bold;
         margin-bottom: 1px;
 
@@ -28,7 +29,8 @@
         cursor: pointer;
 
         .next-videos__head-span {
-          @include default-text('Mulish', 16px, 20px, $color-dark-blue);
+          @include h3;
+          color: $color-dark-blue;
           font-weight: bold;
           letter-spacing: 1px;
           text-transform: uppercase;

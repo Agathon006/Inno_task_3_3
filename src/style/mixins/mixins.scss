@@ -1,6 +1,23 @@
-@mixin default-text($f-f, $f-s, $l-h, $c) {
-  font-family: $f-f;
-  font-size: $f-s;
-  line-height: $l-h;
-  color: $c;
+@mixin h1 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+@mixin h2 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@mixin h3 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }

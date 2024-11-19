@@ -65,7 +65,8 @@
       }
       .header__youtube-link-span {
         display: none;
-        @include default-text('Mulish', 16px, 20px, $color-dark-blue);
+        @include h3;
+        color: $color-dark-blue;
         font-weight: bold;
 
         @media (max-width: 960px) {
@@ -87,7 +88,8 @@
         }
 
         .header__search-input {
-          @include default-text('Mulish', 16px, 20px, $color-dark-gray);
+          @include h3;
+          color: $color-dark-gray;
           padding: 12px 42px 12px 23px;
           width: 100%;
           height: 44px;
@@ -150,7 +152,10 @@
           background: url("../../assets/icons/bell.svg") no-repeat center;
 
           .header__bell-notifications {
-            @include default-text('Mulish', 12px, 15px, $color-white);
+            @include h3;
+            color: $color-white;
+            font-size: 12px;
+            line-height: 15px;
             position: absolute;
             top: -6px;
             right: -5px;
