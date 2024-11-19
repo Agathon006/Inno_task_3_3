@@ -1,0 +1,6 @@
+@mixin default-text($f-f, $f-s, $l-h, $c) {
+  font-family: $f-f;
+  font-size: $f-s;
+  line-height: $l-h;
+  color: $c;
+}

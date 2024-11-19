@@ -10,11 +10,8 @@
       margin-bottom: 26px;
 
       .next-videos__head-title {
-        font-family: "Mulish";
+        @include default-text('Mulish', 36px, 45px, $color-dark-blue);
         font-weight: bold;
-        font-size: 36px;
-        line-height: 45px;
-        color: $color-dark-blue;
         margin-bottom: 1px;
 
         @media (max-width: 1400px) {
@@ -31,13 +28,10 @@
         cursor: pointer;
 
         .next-videos__head-span {
-          font-family: "Mulish";
+          @include default-text('Mulish', 16px, 20px, $color-dark-blue);
           font-weight: bold;
-          font-size: 16px;
-          line-height: 20px;
           letter-spacing: 1px;
           text-transform: uppercase;
-          color: $color-dark-blue;
 
           @media (max-width: 1400px) {
             font-size: 10px;

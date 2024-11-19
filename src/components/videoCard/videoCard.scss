@@ -29,11 +29,8 @@
 
     &__video-headline {
       margin: 15px 0 9px;
-      font-family: "Mulish";
+      @include default-text('Mulish', 26px, 33px, $color-dark-blue);
       font-weight: bold;
-      font-size: 26px;
-      line-height: 33px;
-      color: $color-dark-blue;
       cursor: pointer;
       width: fit-content;
 
@@ -49,10 +46,7 @@
       justify-content: space-between;
 
       .video-card__text-views {
-        font-family: "Mulish";
-        font-size: 18px;
-        line-height: 23px;
-        color: $color-gray;
+        @include default-text('Mulish', 18px, 23px, $color-gray);
 
         @media (max-width: 1400px) {
           font-size: 13px;
@@ -61,10 +55,7 @@
       }
 
       .video-card__text-author {
-        font-family: "Mulish";
-        font-size: 18px;
-        line-height: 23px;
-        color: $color-gray;
+        @include default-text('Mulish', 18px, 23px, $color-gray);
 
         @media (max-width: 1400px) {
           font-size: 13px;

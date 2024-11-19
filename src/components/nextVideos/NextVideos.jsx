@@ -9,17 +9,17 @@ import selectingTheRightHotelBottomImage from "../../assets/images/selecting-the
 
 const NextVideos = () => {
   return (
-    <aside class="next-videos">
-      <div class="next-videos__head">
-        <h2 class="next-videos__head-title">Next</h2>
-        <div class="next-videos__head-right">
-          <span class="next-videos__head-span">Autoplay</span>
-          <div class="next-videos__head-slider">
-            <div class="next-videos__head-slider-inside"></div>
+    <aside className="next-videos">
+      <div className="next-videos__head">
+        <h2 className="next-videos__head-title">Next</h2>
+        <div className="next-videos__head-right">
+          <span className="next-videos__head-span">Autoplay</span>
+          <div className="next-videos__head-slider">
+            <div className="next-videos__head-slider-inside"></div>
           </div>
         </div>
       </div>
-      <aside class="next-videos__body">
+      <aside className="next-videos__body">
         <VideoCard
           image={babyMonitorTechnologyImage}
           timeCode="8:00"
