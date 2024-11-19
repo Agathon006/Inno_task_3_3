@@ -1,4 +1,4 @@
-import "./videoDescription.css";
+import "./videoDescription.scss";
 import channelIcon from "../../assets/images/food-and-drink.png";
 
 const VideoDescription = () => {

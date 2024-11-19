@@ -1,3 +1,5 @@
+@use '../../style/mixins/mixins' as *;
+
 .app {
   .video-frame {
     margin-bottom: 15px;

@@ -1,3 +1,5 @@
+@use '../../style/mixins/mixins' as *;
+
 .app {
   .video-card {
     width: 367px;

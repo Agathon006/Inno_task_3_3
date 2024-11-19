@@ -1,4 +1,4 @@
-import "./nextVideos.css";
+import "./nextVideos.scss";
 
 import VideoCard from "../videoCard/videoCard";
 

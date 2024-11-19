@@ -1,3 +1,5 @@
+@use '../../style/mixins/mixins' as *;
+
 .app {
   .header {
     padding: 20px 70px 30px 32px;

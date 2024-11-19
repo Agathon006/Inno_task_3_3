@@ -1,4 +1,4 @@
-import "./videoFrame.css";
+import "./videoFrame.scss";
 import videoPreview from "../../assets/images/dude-you-re-getting-a-telescope.png";
 import videoPreviewMob from "../../assets/images/dude-you-re-getting-a-telescope-mob.png";
 import likeIcon from "../../assets/icons/like.svg";

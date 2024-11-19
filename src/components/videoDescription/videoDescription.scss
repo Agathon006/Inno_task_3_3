@@ -1,3 +1,5 @@
+@use '../../style/mixins/mixins' as *;
+
 .app {
   .video-description {
     display: flex;

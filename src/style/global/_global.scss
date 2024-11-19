@@ -1,8 +1,4 @@
-@import "../../assets/fonts/Mulish-Bold/font-mulish-bold.css";
-@import "../../assets/fonts/Mulish-Regular/font-mulish-regular.css";
-
-@import "../mixins/mixins.scss";
-@import "../vars/vars.css";
+@use '../mixins/mixins' as *;
 
 .app {
   min-height: 100vh;
