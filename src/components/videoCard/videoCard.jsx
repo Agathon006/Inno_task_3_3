@@ -1,4 +1,4 @@
-import "./videoCard.scss";
+import "./VideoCard.scss";
 
 const videoCard = ({image, timeCode, videoHeadline, views, authorName}) => {
   return (

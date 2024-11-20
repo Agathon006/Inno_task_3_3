@@ -1,7 +1,7 @@
-import AppHeader from "../appHeader/AppHeader";
-import VideoFrame from "../videoFrame/VideoFrame";
-import VideoDescription from "../videoDescription/VideoDescription";
-import NextVideos from "../nextVideos/NextVideos";
+import AppHeader from "../AppHeader/AppHeader.jxs";
+import VideoFrame from "../VideoFrame/VideoFrame.jxs";
+import VideoDescription from "../VideoDescription/VideoDescription.jxs";
+import NextVideos from "../NextVideos/NextVideos.jxs";
 
 const App = () => {
   return (

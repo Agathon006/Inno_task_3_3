@@ -1,6 +1,6 @@
-import "./nextVideos.scss";
+import "./NextVideos.scss";
 
-import VideoCard from "../videoCard/videoCard";
+import VideoCard from "../VideoCard/VideoCard.jsx";
 
 import babyMonitorTechnologyImage from "../../assets/images/baby-monitor-technology.png";
 import aGoodAutoresponderImage from "../../assets/images/a-good-autoresponder.png";
