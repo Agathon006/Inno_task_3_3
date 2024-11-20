@@ -1,0 +1,18 @@
+@use '../../style/vars' as *;
+@use '../../style/typography' as *;
+
+.icon-notification {
+  @include text-xxs;
+  color: var(--color-white);
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border: 1px solid var(--color-white);
+  border-radius: 100%;
+}

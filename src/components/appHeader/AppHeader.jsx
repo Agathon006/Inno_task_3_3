@@ -1,42 +1,52 @@
 import "./AppHeader.scss";
 
+import BurgerMenuIcon from "../../assets/icons/burger-menu.svg";
+import CameraIcon from "../../assets/icons/camera.svg";
+import NineDotsIcon from "../../assets/icons/nine-dots.svg";
+import BellIcon from "../../assets/icons/bell.svg";
+import SearchIcon from "../../assets/icons/search.svg";
+import ThreeDotsIcon from "../../assets/icons/three-dots.svg";
+
+import YoutubeLogoLink from "../YoutubeLogoLink/YoutubeLogoLink.jsx";
+import SearchInput from "../SearchInput/SearchInput.jsx";
+import IconButton from "../IconButton/IconButton.jsx";
+import IconNotification from "../IconNotification/IconNotification.jsx";
+
 const AppHeader = () => {
   return (
     <header className="header">
       <div className="header__left-wrapper">
-        <button className="header__burger-btn" id="burger-btn"></button>
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          className="header__youtube-link"
-        ></a>
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          className="header__youtube-link-mob"
-        ></a>
+        <IconButton extraClassName="header__burger-btn">
+          <BurgerMenuIcon />
+        </IconButton>
+        <YoutubeLogoLink />
         <span className="header__youtube-link-span">Margaret Phelps</span>
-        <div className="header__search-input-wrapper">
-          <input
-            type="search"
-            name="video-search"
-            placeholder="Search"
-            className="header__search-input"
-          />
-          <button className="header__input-search-btn"></button>
-        </div>
+        <SearchInput />
       </div>
       <div className="header__right-wrapper">
         <div className="header__btns-wrapper">
-          <button className="header__btn-camera"></button>
-          <button className="header__btn-nine-dots"></button>
-          <button className="header__btn-bell">
-            <span className="header__bell-notifications">3</span>
-          </button>
+          <IconButton>
+            <CameraIcon />
+          </IconButton>
+          <IconButton>
+            <NineDotsIcon />
+          </IconButton>
+          <IconButton>
+            <BellIcon />
+            <IconNotification notificationNumber={3} />
+          </IconButton>
         </div>
-        <button className="header__btn-search"></button>
+        <IconButton extraClassName="header__btn-search" width={19} height={19}>
+          <SearchIcon />
+        </IconButton>
         <button className="header__btn-profile"></button>
-        <button className="header__btn-three-dots"></button>
+        <IconButton
+          extraClassName="header__btn-three-dots"
+          width={5}
+          height={19}
+        >
+          <ThreeDotsIcon />
+        </IconButton>
       </div>
     </header>
   );
