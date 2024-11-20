@@ -30,9 +30,7 @@
         flex-direction: column;
 
         .video-description__text-title {
-          @include h3;
-          font-size: 1.625rem;
-          line-height: 2.0625rem;
+          @include text-xxl;
           color: var(--color-primary-dark);
           margin-bottom: 4px;
           cursor: pointer;
@@ -41,15 +39,12 @@
 
           @media (max-width: 960px) {
             margin-top: 6px;
-            font-size: 1rem;
-            line-height: 1.25rem;
+            @include text-m;
           }
         }
 
         .video-description__text-sub-number {
-          @include h3;
-          font-size: 0.75rem;
-          line-height: 0.9375rem;
+          @include text-xxs;
           color: var(--color-secondary);
           display: none;
 
@@ -59,9 +54,7 @@
         }
 
         .video-description__text-date {
-          @include h3;
-          font-size: 0.8125rem;
-          line-height: 1rem;
+          @include text-xs;
           color: var(--color-secondary);
           margin-bottom: 14px;
 
@@ -71,9 +64,7 @@
         }
 
         .video-description__text-content {
-          @include h3;
-          font-size: 1rem;
-          line-height: 1.375rem;
+          @include text-m;
           color: var(--color-black);
           mix-blend-mode: normal;
           opacity: 0.6;
@@ -85,7 +76,7 @@
         }
 
         .video-description__text-show-more {
-          @include h2;
+          @include text-l;
           color: var(--color-secondary);
           cursor: pointer;
           width: fit-content;
@@ -105,7 +96,7 @@
     .video-description__subscribe-btn {
       width: 154px;
       height: 40px;
-      @include h3;
+      @include text-m;
       color: var(--color-white);
       padding: 10px 20px;
       border-radius: 20px;
@@ -121,7 +112,7 @@
     }
 
     .video-description__subscribe-span {
-      @include h3;
+      @include text-m;
       color: var(--color-red);
       text-align: center;
       display: none;

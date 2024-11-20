@@ -32,9 +32,7 @@
 
     &__video-headline {
       margin: 15px 0 9px;
-      @include h3;
-      font-size: 1.625rem;
-      line-height: 2.0625rem;
+      @include text-xxl;
       color: var(--color-primary-dark);
       font-weight: bold;
       cursor: pointer;
@@ -42,8 +40,7 @@
 
       @media (max-width: 1400px) {
         margin: 8px 0 4px;
-        font-size: 1rem;
-        line-height: 1.25rem;
+        @include text-m;
       }
     }
 
@@ -52,26 +49,20 @@
       justify-content: space-between;
 
       .video-card__text-views {
-        @include h3;
-        font-size: 1.125rem;
-        line-height: 1.4375rem;
+        @include text-xl;
         color: var(--color-secondary);
 
         @media (max-width: 1400px) {
-          font-size: 0.8125rem;
-          line-height: 1rem;
+          @include text-xs;
         }
       }
 
       .video-card__text-author {
-        @include h3;
-        font-size: 1.125rem;
-        line-height: 1.4375rem;
+        @include text-xl;
         color: var(--color-secondary);
 
         @media (max-width: 1400px) {
-          font-size: 0.8125rem;
-          line-height: 1rem;
+          @include text-xs;
         }
       }
     }

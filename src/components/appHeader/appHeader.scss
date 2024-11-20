@@ -68,7 +68,7 @@
       }
       .header__youtube-link-span {
         display: none;
-        @include h3;
+        @include text-m;
         color: var(--color-primary-dark);
         font-weight: bold;
 
@@ -91,7 +91,7 @@
         }
 
         .header__search-input {
-          @include h3;
+          @include text-m;
           color: var(--color-secondary-dark);
           padding: 12px 42px 12px 23px;
           width: 100%;
@@ -155,10 +155,8 @@
           background: url("../../assets/icons/bell.svg") no-repeat center;
 
           .header__bell-notifications {
-            @include h3;
+            @include text-xxs;
             color: var(--color-white);
-            font-size: 0.75rem;
-            line-height: 0.9375rem;
             position: absolute;
             top: -6px;
             right: -5px;

@@ -29,14 +29,13 @@
       justify-content: space-between;
 
       .video-frame__title {
-        @include h1;
+        @include text-xxxl;
         color: var(--color-primary);
         font-weight: bold;
 
         @media (max-width: 960px) {
           width: 210px;
-          font-size: 1.25rem;
-          line-height: 1.5625rem;
+          @include text-l;
         }
       }
 
@@ -63,12 +62,11 @@
 
       &-left {
         .video-frame__views {
-          @include h2;
+          @include text-l;
           color: var(--color-secondary);
 
           @media (max-width: 960px) {
-            font-size: 0.75rem;
-            line-height: 0.9375rem;
+            @include text-xxs;
             margin-left: 16px;
           }
         }
@@ -91,12 +89,11 @@
             height: 13px;
           }
           &-span {
-            @include h3;
+            @include text-m;
             color: var(--color-primary);
 
             @media (max-width: 960px) {
-              font-size: 0.75rem;
-              line-height: 0.9375rem;
+              @include text-xxs;
             }
           }
 
