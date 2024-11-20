@@ -5,6 +5,7 @@ const IconButton = ({
   width = 24,
   height = 24,
   extraClassName = "",
+  notifications = 0,
   children,
 }) => {
   return (
@@ -13,6 +14,7 @@ const IconButton = ({
       style={{ width: `${width}px`, height: `${height}px` }}
     >
       {children}
+      {notifications ? <span className="icon-notification">{notifications}</span> : null}
     </button>
   );
 };

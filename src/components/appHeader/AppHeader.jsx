@@ -12,7 +12,6 @@ import YoutubeLogoLink from "../YoutubeLogoLink/YoutubeLogoLink.jsx";
 import SearchInput from "../SearchInput/SearchInput.jsx";
 import LogoLink from "../LogoLink/LogoLink.jsx";
 import IconButton from "../IconButton/IconButton.jsx";
-import IconNotification from "../IconNotification/IconNotification.jsx";
 
 const AppHeader = () => {
   return (
@@ -33,9 +32,8 @@ const AppHeader = () => {
           <IconButton>
             <NineDotsIcon />
           </IconButton>
-          <IconButton>
+          <IconButton notifications={3}>
             <BellIcon />
-            <IconNotification notificationNumber={3} />
           </IconButton>
         </div>
         <IconButton extraClassName="header__btn-search" width={19} height={19}>
