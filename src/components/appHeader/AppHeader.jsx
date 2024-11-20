@@ -6,9 +6,11 @@ import NineDotsIcon from "../../assets/icons/nine-dots.svg";
 import BellIcon from "../../assets/icons/bell.svg";
 import SearchIcon from "../../assets/icons/search.svg";
 import ThreeDotsIcon from "../../assets/icons/three-dots.svg";
+import userpictureImage from "../../assets/images/userpicture.png";
 
 import YoutubeLogoLink from "../YoutubeLogoLink/YoutubeLogoLink.jsx";
 import SearchInput from "../SearchInput/SearchInput.jsx";
+import LogoLink from "../LogoLink/LogoLink.jsx";
 import IconButton from "../IconButton/IconButton.jsx";
 import IconNotification from "../IconNotification/IconNotification.jsx";
 
@@ -39,7 +41,11 @@ const AppHeader = () => {
         <IconButton extraClassName="header__btn-search" width={19} height={19}>
           <SearchIcon />
         </IconButton>
-        <button className="header__btn-profile"></button>
+        <LogoLink
+          extraClassName="header__btn-profile"
+          image={userpictureImage}
+          imageAlt="avatar"
+        />
         <IconButton
           extraClassName="header__btn-three-dots"
           width={5}
