@@ -10,7 +10,11 @@ const AppHeader = () => {
           target="_blank"
           className="header__youtube-link"
         ></a>
-        <button className="header__youtube-link-mob"></button>
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          className="header__youtube-link-mob"
+        ></a>
         <span className="header__youtube-link-span">Margaret Phelps</span>
         <div className="header__search-input-wrapper">
           <input

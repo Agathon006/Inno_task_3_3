@@ -1,5 +1,5 @@
 @use "./vars" as *;
-@use "./mixins" as *;
+@use "./typography" as *;
 
 .app {
   min-height: 100vh;
@@ -70,7 +70,7 @@ button {
 }
 
 .time-label {
-  font-family: "Mulish";
+  @include h3;
   font-size: 0.875rem;
   line-height: 1.125rem;
   color: var(--color-white);

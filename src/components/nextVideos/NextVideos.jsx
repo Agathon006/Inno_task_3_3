@@ -7,6 +7,37 @@ import aGoodAutoresponderImage from "../../assets/images/a-good-autoresponder.pn
 import selectingTheRightHotelImage from "../../assets/images/selecting-the-right-hotel.png";
 import selectingTheRightHotelBottomImage from "../../assets/images/selecting-the-right-hotel-bottom.png";
 
+const videoData = [
+  {
+    image: babyMonitorTechnologyImage,
+    timeCode: "8:00",
+    videoHeadline: "Baby Monitor Technology",
+    views: "123k views",
+    authorName: "Dollie Blair",
+  },
+  {
+    image: aGoodAutoresponderImage,
+    timeCode: "8:00",
+    videoHeadline: "A Good Autoresponder",
+    views: "123k views",
+    authorName: "Dollie Blair",
+  },
+  {
+    image: selectingTheRightHotelImage,
+    timeCode: "8:00",
+    videoHeadline: "Selecting The Right Hotel",
+    views: "123k views",
+    authorName: "Dollie Blair",
+  },
+  {
+    image: selectingTheRightHotelBottomImage,
+    timeCode: "8:00",
+    videoHeadline: "Selecting The Right Hotel",
+    views: "123k views",
+    authorName: "Dollie Blair",
+  },
+];
+
 const NextVideos = () => {
   return (
     <aside className="next-videos">
@@ -19,36 +50,18 @@ const NextVideos = () => {
           </div>
         </div>
       </div>
-      <aside className="next-videos__body">
-        <VideoCard
-          image={babyMonitorTechnologyImage}
-          timeCode="8:00"
-          videoHeadline="Baby Monitor Technology"
-          views="123k views"
-          authorName="Dollie Blair"
-        />
-        <VideoCard
-          image={aGoodAutoresponderImage}
-          timeCode="8:00"
-          videoHeadline="A Good Autoresponder"
-          views="123k views"
-          authorName="Dollie Blair"
-        />
-        <VideoCard
-          image={selectingTheRightHotelImage}
-          timeCode="8:00"
-          videoHeadline="Selecting The Right Hotel"
-          views="123k views"
-          authorName="Dollie Blair"
-        />
-        <VideoCard
-          image={selectingTheRightHotelBottomImage}
-          timeCode="8:00"
-          videoHeadline="Selecting The Right Hotel"
-          views="123k views"
-          authorName="Dollie Blair"
-        />
-      </aside>
+      <div className="next-videos__body">
+        {videoData.map((video, index) => (
+          <VideoCard
+            key={index}
+            image={video.image}
+            timeCode={video.timeCode}
+            videoHeadline={video.videoHeadline}
+            views={video.views}
+            authorName={video.authorName}
+          />
+        ))}
+      </div>
     </aside>
   );
 };
