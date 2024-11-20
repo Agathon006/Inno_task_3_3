@@ -2,6 +2,8 @@
 @use '../../style/typography' as *;
 
 .icon-button {
+  max-width: 30px;
+  max-height: 30px;
   position: relative;
   display: flex;
   justify-content: center;

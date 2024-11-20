@@ -1,5 +1,5 @@
-@use '../../style/vars' as *;
-@use '../../style/typography' as *;
+@use "../../style/vars" as *;
+@use "../../style/typography" as *;
 
 .app {
   .video-frame {
@@ -73,33 +73,8 @@
       }
 
       &-right {
-        .video-frame__button {
-          padding: 10px 20px;
-          background-color: rgba(240, 240, 240, 0.3);
-          mix-blend-mode: normal;
-          border-radius: 20px;
-
-          &:nth-child(2) {
-            margin: 0 10px;
-          }
-
-          &-logo {
-            margin-right: 8px;
-            width: 14px;
-            height: 13px;
-          }
-          &-span {
-            @include text-m;
-            color: var(--color-primary);
-
-            @media (max-width: 960px) {
-              @include text-xxs;
-            }
-          }
-
-          @media (max-width: 960px) {
-            padding: 5px 10px;
-          }
+        .video-frame__button--middle {
+          margin: 0 10px;
         }
 
         .video-frame__extra-button {

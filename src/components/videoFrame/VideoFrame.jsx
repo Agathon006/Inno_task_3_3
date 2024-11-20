@@ -1,11 +1,15 @@
 import "./videoFrame.scss";
-import videoPreview from "../../assets/images/dude-you-re-getting-a-telescope.png";
-import videoPreviewMob from "../../assets/images/dude-you-re-getting-a-telescope-mob.png";
-import likeIcon from "../../assets/icons/like.svg";
-import disLikeIcon from "../../assets/icons/dislike.svg";
-import shareIcon from "../../assets/icons/share.svg";
+
+import LikeIcon from "../../assets/icons/like.svg";
+import DislikeIcon from "../../assets/icons/dislike.svg";
+import ShareIcon from "../../assets/icons/share.svg";
 import extraIcon from "../../assets/icons/extra.svg";
 import showMoreIcon from "../../assets/icons/show-more.svg";
+
+import videoPreview from "../../assets/images/dude-you-re-getting-a-telescope.png";
+import videoPreviewMob from "../../assets/images/dude-you-re-getting-a-telescope-mob.png";
+
+import IconWithSpanButton from "../IconWithSpanButton/IconWithSpanButton";
 
 const videoFrame = () => {
   return (
@@ -34,30 +38,18 @@ const videoFrame = () => {
           <span className="video-frame__views">123k views</span>
         </div>
         <div className="video-frame__subtitle-right">
-          <button className="video-frame__button">
-            <img
-              src={likeIcon}
-              alt="like"
-              className="video-frame__button-logo"
-            />
-            <span className="video-frame__button-span">123k</span>
-          </button>
-          <button className="video-frame__button">
-            <img
-              src={disLikeIcon}
-              alt="dislike"
-              className="video-frame__button-logo"
-            />
-            <span className="video-frame__button-span">435k</span>
-          </button>
-          <button className="video-frame__button">
-            <img
-              src={shareIcon}
-              alt="share"
-              className="video-frame__button-logo"
-            />
-            <span className="video-frame__button-span">Share</span>
-          </button>
+          <IconWithSpanButton spanText="123k">
+            <LikeIcon />
+          </IconWithSpanButton>
+          <IconWithSpanButton
+            spanText="435k"
+            extraClassName="video-frame__button--middle"
+          >
+            <DislikeIcon />
+          </IconWithSpanButton>
+          <IconWithSpanButton spanText="Share">
+            <ShareIcon />
+          </IconWithSpanButton>
           <button
             style={{
               backgroundImage: `url(${extraIcon})`,

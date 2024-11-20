@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import "./LogoLink.scss";
+import "./RoundLogoLink.scss";
 
-const LogoLink = ({hrefProp='#', extraClassName, image, imageAlt}) => {
+const RoundLogoLink = ({hrefProp='#', extraClassName, image, imageAlt}) => {
   return (
     <a href={hrefProp} target="_blank" className={extraClassName}>
       <img src={image} alt={imageAlt} className="logo-link" />
@@ -9,4 +9,4 @@ const LogoLink = ({hrefProp='#', extraClassName, image, imageAlt}) => {
   );
 };
 
-export default LogoLink;
+export default RoundLogoLink;

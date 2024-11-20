@@ -1,0 +1,23 @@
+@use "../../style/vars" as *;
+@use "../../style/typography" as *;
+
+.icon-with-span-button {
+  padding: 10px 20px;
+  background-color: rgba(240, 240, 240, 0.3);
+  mix-blend-mode: normal;
+  border-radius: 20px;
+
+  &__span {
+    @include text-m;
+    color: var(--color-primary);
+    margin-left: 8px;
+
+    @media (max-width: 960px) {
+      @include text-xxs;
+    }
+  }
+
+  @media (max-width: 960px) {
+    padding: 5px 10px;
+  }
+}
