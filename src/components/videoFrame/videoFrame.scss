@@ -40,8 +40,6 @@
       }
 
       .video-frame__button-more {
-        width: 10px;
-        height: 7px;
         display: none;
         margin-top: 13px;
 
@@ -73,14 +71,16 @@
       }
 
       &-right {
+        display: flex;
+        align-items: center;
+
         .video-frame__button--middle {
           margin: 0 10px;
         }
 
         .video-frame__extra-button {
+          padding: 5px 0;
           margin-left: 40px;
-          width: 28px;
-          height: 6px;
 
           @media (max-width: 960px) {
             display: none;

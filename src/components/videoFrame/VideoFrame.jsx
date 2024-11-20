@@ -3,12 +3,13 @@ import "./videoFrame.scss";
 import LikeIcon from "../../assets/icons/like.svg";
 import DislikeIcon from "../../assets/icons/dislike.svg";
 import ShareIcon from "../../assets/icons/share.svg";
-import extraIcon from "../../assets/icons/extra.svg";
-import showMoreIcon from "../../assets/icons/show-more.svg";
+import ExtraIcon from "../../assets/icons/extra.svg";
+import ShowMoreIcon from "../../assets/icons/show-more.svg";
 
 import videoPreview from "../../assets/images/dude-you-re-getting-a-telescope.png";
 import videoPreviewMob from "../../assets/images/dude-you-re-getting-a-telescope-mob.png";
 
+import IconButton from "../IconButton/IconButton";
 import IconWithSpanButton from "../IconWithSpanButton/IconWithSpanButton";
 
 const videoFrame = () => {
@@ -26,12 +27,9 @@ const videoFrame = () => {
       />
       <div className="video-frame__title-wrapper">
         <h2 className="video-frame__title">Dude You Re Getting A Telescope</h2>
-        <button
-          style={{
-            backgroundImage: `url(${showMoreIcon})`,
-          }}
-          className="video-frame__button-more"
-        ></button>
+        <IconButton extraClassName="video-frame__button-more">
+          <ShowMoreIcon />
+        </IconButton>
       </div>
       <div className="video-frame__subtitle">
         <div className="video-frame__subtitle-left">
@@ -50,12 +48,9 @@ const videoFrame = () => {
           <IconWithSpanButton spanText="Share">
             <ShareIcon />
           </IconWithSpanButton>
-          <button
-            style={{
-              backgroundImage: `url(${extraIcon})`,
-            }}
-            className="video-frame__extra-button"
-          ></button>
+          <IconButton extraClassName="video-frame__extra-button">
+            <ExtraIcon />
+          </IconButton>
         </div>
       </div>
     </div>
