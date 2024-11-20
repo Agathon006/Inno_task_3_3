@@ -14,7 +14,7 @@
 
       .next-videos__head-title {
         @include h1;
-        color: var(--primary-dark);
+        color: var(--color-primary-dark);
         font-weight: bold;
         margin-bottom: 1px;
 
@@ -33,7 +33,7 @@
 
         .next-videos__head-span {
           @include h3;
-          color: var(--primary-dark);
+          color: var(--color-primary-dark);
           font-weight: bold;
           letter-spacing: 1px;
           text-transform: uppercase;
