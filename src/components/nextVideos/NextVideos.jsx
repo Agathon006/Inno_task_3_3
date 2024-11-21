@@ -1,11 +1,12 @@
 import "./NextVideos.scss";
 
-import VideoCard from "../VideoCard/VideoCard.jsx";
-
 import babyMonitorTechnologyImage from "../../assets/images/baby-monitor-technology.png";
 import aGoodAutoresponderImage from "../../assets/images/a-good-autoresponder.png";
 import selectingTheRightHotelImage from "../../assets/images/selecting-the-right-hotel.png";
 import selectingTheRightHotelBottomImage from "../../assets/images/selecting-the-right-hotel-bottom.png";
+
+import VideoCard from "../VideoCard/VideoCard.jsx";
+import AutoPlayButton from "../AutoPlayButton/AutoPlayButton.jsx";
 
 const videoData = [
   {
@@ -43,12 +44,7 @@ const NextVideos = () => {
     <aside className="next-videos">
       <div className="next-videos__head">
         <h2 className="next-videos__head-title">Next</h2>
-        <div className="next-videos__head-right">
-          <span className="next-videos__head-span">Autoplay</span>
-          <div className="next-videos__head-slider">
-            <div className="next-videos__head-slider-inside"></div>
-          </div>
-        </div>
+        <AutoPlayButton />
       </div>
       <div className="next-videos__body">
         {videoData.map((video, index) => (

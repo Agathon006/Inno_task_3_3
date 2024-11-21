@@ -1,0 +1,61 @@
+@use "../../style/vars" as *;
+@use "../../style/typography" as *;
+
+.autoplay-btn {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  cursor: pointer;
+
+  &__span {
+    @include text-m;
+    color: var(--color-primary-dark);
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    @media (max-width: 1400px) {
+      @include text-xxxs;
+      letter-spacing: 0.625px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    width: 44px;
+    height: 28px;
+    background: rgba(235, 235, 235, 0.3);
+    mix-blend-mode: normal;
+    border-radius: 14px;
+
+    &--inside {
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      background: #2196f3;
+      box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.237602);
+
+      @media (max-width: 1400px) {
+        top: 1px;
+        right: 1px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    @media (max-width: 1400px) {
+      width: 30px;
+      height: 19px;
+      border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    gap: 10px;
+  }
+}
