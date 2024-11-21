@@ -1,0 +1,9 @@
+@use "../../style/vars" as *;
+@use "../../style/typography" as *;
+
+.show-more-btn {
+  @include text-l;
+  color: var(--color-secondary);
+  cursor: pointer;
+  width: fit-content;
+}

@@ -1,6 +1,12 @@
-.logo-link {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+a {
   border-radius: 100%;
+
+  .logo-link {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+  }
 }

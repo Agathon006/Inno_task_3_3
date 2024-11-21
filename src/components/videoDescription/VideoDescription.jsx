@@ -1,14 +1,18 @@
 import "./VideoDescription.scss";
+
 import channelIcon from "../../assets/images/food-and-drink.png";
+
+import RoundLogoLink from "../RoundLogoLink/RoundLogoLink.jsx";
+import ShowMoreButton from "../ShowMoreButton/ShowMoreButton.jsx";
 
 const VideoDescription = () => {
   return (
     <div className="video-description">
       <div className="video-description__left">
-        <img
-          src={channelIcon}
-          alt="Food & Drink"
-          className="video-description__channel-icon"
+        <RoundLogoLink
+          extraClassName="video-description__channel-icon"
+          image={channelIcon}
+          imageAlt="channelLogo"
         />
         <div className="video-description__text">
           <h3 className="video-description__text-title">Food & Drink</h3>
@@ -26,7 +30,7 @@ const VideoDescription = () => {
             number of factors, including ad placement, demographic, even the
             consumer’s mood when they see your ad.
           </p>
-          <span className="video-description__text-show-more">Show more</span>
+          <ShowMoreButton extraClassName="video-description__text-show-more" />
         </div>
       </div>
       <button className="video-description__subscribe-btn">

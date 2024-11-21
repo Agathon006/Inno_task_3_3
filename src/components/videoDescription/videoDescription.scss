@@ -1,5 +1,5 @@
-@use '../../style/vars' as *;
-@use '../../style/typography' as *;
+@use "../../style/vars" as *;
+@use "../../style/typography" as *;
 
 .app {
   .video-description {
@@ -16,8 +16,6 @@
       .video-description__channel-icon {
         width: 80px;
         height: 80px;
-        border-radius: 100%;
-        cursor: pointer;
 
         @media (max-width: 960px) {
           width: 50px;
@@ -76,11 +74,6 @@
         }
 
         .video-description__text-show-more {
-          @include text-l;
-          color: var(--color-secondary);
-          cursor: pointer;
-          width: fit-content;
-
           @media (max-width: 960px) {
             display: none;
           }
