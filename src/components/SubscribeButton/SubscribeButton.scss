@@ -1,0 +1,32 @@
+@use "../../style/vars" as *;
+@use "../../style/typography" as *;
+
+.subscribe-btn {
+  width: 154px;
+  height: 40px;
+  @include text-m;
+  color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--color-red);
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-left: 10px;
+
+  @media (max-width: 960px) {
+    width: 73px;
+    height: 20px;
+    color: var(--color-red);
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  &__span {
+    @media (max-width: 960px) {
+      display: none;
+    }
+  }
+}

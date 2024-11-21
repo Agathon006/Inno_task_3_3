@@ -4,6 +4,7 @@ import channelIcon from "../../assets/images/food-and-drink.png";
 
 import RoundLogoLink from "../RoundLogoLink/RoundLogoLink.jsx";
 import ShowMoreButton from "../ShowMoreButton/ShowMoreButton.jsx";
+import SubscribeButton from "../SubscribeButton/SubscribeButton.jsx";
 
 const VideoDescription = () => {
   return (
@@ -33,10 +34,7 @@ const VideoDescription = () => {
           <ShowMoreButton extraClassName="video-description__text-show-more" />
         </div>
       </div>
-      <button className="video-description__subscribe-btn">
-        Subscribe 2.3m
-      </button>
-      <span className="video-description__subscribe-span">Subscribe</span>
+      <SubscribeButton subNumber="2.3m" />
     </div>
   );
 };
